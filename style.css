@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(80, 79, 94);
+    text-align: center;
+    margin: 50px 0 700px 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 36px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 13.5%;
+    background-color: rgb(30, 29, 30);
+}
+
+.new-chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    display: flex;
+    width: 86.5%;
+    text-align: justify;
+    background-color: rgb(50, 51, 62);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gpt {
+    height: 100%;
+}
+
+.gpt-4 {
+    display: flex;
+    width: 27%;
+    height: 150px;
+    color: rgb(159, 157, 157);
+    font-size: 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: rgb(28, 29, 34);
+
+    justify-content: space-between;
+}
+
+.text {
+    transition-duration: 200ms;
+}
+
+.text:hover {
+    color: rgb(253, 252, 255);
+}
+
+.gpt-3 {
+    display: flex;
+    width: 48%;
+    color: rgb(253, 252, 255);
+    font-size: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(50, 51, 62);
+    margin: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 200ms;
+}
+
+.gpt-3:hover {
+    background-color: rgb(28, 29, 34);
+    color: rgb(159, 157, 157);
+}
+
+.gpt4-content {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+
+}
+
+.gpt4-content,
+.gpt3-content {
+    transition-duration: 200ms;
+}
+
+.gpt4-content:hover {
+    color: rgb(255, 255, 255);
+}
+
+.gpt3-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%px;
+}
+
+.big-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15%;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(210px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.plus {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    color: rgb(131, 131, 131);
+    height: 150px;
+    background-color: rgb(68, 71, 83);
+    border-radius: 25px;
+    margin: 1%;
+    border: solid 1px;
+    padding: 15px;
+    font-size: 46px;
+}
+
+.send-message {
+    padding: 25px;
+}
+
+.options {
+    display: flex;
+    margin: 8px;
+    height: 180px;
+    color: rgb(202, 199, 199);
+    font-size: 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: rgb(50, 51, 62);
+    border: solid 1px;
+    transition-duration: 200ms;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.options:hover {
+    background-color: rgb(65, 62, 73);
+}
+
+.sub-options {
+    color: rgb(131, 131, 131);
+}
+
+.version,
+a {
+    color: rgb(131, 131, 131);
+    text-align: center;
+    justify-content: center;
+}
+
+.chat {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    color: rgb(198, 197, 197);
+    justify-content: space-between;
+}
+
+.sidebar-newchat {
+    display: flex;
+    width: 350px;
+    height: 130px;
+    border-radius: 15px;
+    color: rgb(198, 197, 197);
+    font-size: 46px;
+    cursor: pointer;
+    border: solid 1px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.side-bar {
+    display: flex;
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    color: rgb(198, 197, 197);
+    font-size: 46px;
+    cursor: pointer;
+    border: solid 1px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.previous {
+    font-size: 40px;
+    color: rgb(131, 131, 131);
+    display: flex;
+    margin: 60px;
+}
+
+.icon-chat {
+    width: 280px;
+    display: flex;
+    color: rgb(198, 197, 197);
+    justify-content: space-around;
+    margin: 30px 0 70px 40px;
+    font-size: 1.1em;
+}
+
+.mid-section {
+    margin-bottom: 155%;
+}
+
+.new-image {
+    width: 130px;
+    height: 70px;
+    margin: 30px 0 0px 50px;
+}
+
+.upgrade {
+    display: flex;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 30px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.sesion {
+    display: flex;
+    color: white;
+    margin: 20px 0 15px 30px;
+    align-content: center;
+    font-size: 1.1em;
+    justify-content: space-around;
+}
+
+.user-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .button-group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .gpt {
+        height: 10%;
+    }
+
+    .gpt-4 {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-device-width: 680px) and (max-device-width: 1000px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .button-group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-side {
+        width: 80%;
+    }
+
+    .gpt {
+        height: 10%;
+    }
+
+    .gpt-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) {
+
+    body {
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-side {
+        height: 100%;
+    }
+
+    .gpt {
+        height: 50%;
+    }
+}
